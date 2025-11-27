@@ -3,6 +3,7 @@ package com.ryankshah.skyrimcombat.data;
 import com.ryankshah.skyrimcombat.Constants;
 import com.ryankshah.skyrimcombat.block.ArcaneEnchanterBlock;
 import com.ryankshah.skyrimcombat.block.BlacksmithForgeBlock;
+import com.ryankshah.skyrimcombat.registration.RegistryObject;
 import com.ryankshah.skyrimcombat.registry.BlockRegistry;
 import com.ryankshah.skyrimcombat.registry.ItemRegistry;
 import net.minecraft.client.data.models.BlockModelGenerators;
@@ -15,9 +16,11 @@ import net.minecraft.core.Holder;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ShieldItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
 
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class SkyrimCombatModelProvider extends ModelProvider {
@@ -218,14 +221,14 @@ public class SkyrimCombatModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ItemRegistry.FALMER_ARROW.get(), ModelTemplates.FLAT_ITEM);
 
 // Shields
-        itemModels.generateFlatItem(ItemRegistry.DAEDRIC_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemRegistry.DWARVEN_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemRegistry.EBONY_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemRegistry.ELVEN_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemRegistry.GLASS_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemRegistry.IRON_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemRegistry.ORCISH_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemRegistry.STEEL_SHIELD.get(), ModelTemplates.FLAT_ITEM);
+//        itemModels.generateFlatItem(ItemRegistry.DAEDRIC_SHIELD.get(), ModelTemplates.FLAT_ITEM);
+//        itemModels.generateFlatItem(ItemRegistry.DWARVEN_SHIELD.get(), ModelTemplates.FLAT_ITEM);
+//        itemModels.generateFlatItem(ItemRegistry.EBONY_SHIELD.get(), ModelTemplates.FLAT_ITEM);
+//        itemModels.generateFlatItem(ItemRegistry.ELVEN_SHIELD.get(), ModelTemplates.FLAT_ITEM);
+//        itemModels.generateFlatItem(ItemRegistry.GLASS_SHIELD.get(), ModelTemplates.FLAT_ITEM);
+//        itemModels.generateFlatItem(ItemRegistry.IRON_SHIELD.get(), ModelTemplates.FLAT_ITEM);
+//        itemModels.generateFlatItem(ItemRegistry.ORCISH_SHIELD.get(), ModelTemplates.FLAT_ITEM);
+//        itemModels.generateFlatItem(ItemRegistry.STEEL_SHIELD.get(), ModelTemplates.FLAT_ITEM);
 
 // Steel armor (uncomment these)
         itemModels.generateFlatItem(ItemRegistry.STEEL_HELMET.get(), ModelTemplates.FLAT_ITEM);
@@ -262,6 +265,11 @@ public class SkyrimCombatModelProvider extends ModelProvider {
                         blockHolder.value() instanceof BlacksmithForgeBlock ||
                         blockHolder.value() instanceof ArcaneEnchanterBlock
         ));
+    }
+
+    @Override
+    protected Stream<? extends Holder<Item>> getKnownItems() {
+        return ItemRegistry.ITEMS.getEntries().stream().map(RegistryObject::asHolder).filter(e -> !(e.value() instanceof ShieldItem));
     }
 
     private void sword(ItemModelGenerators generator, Item item) {
