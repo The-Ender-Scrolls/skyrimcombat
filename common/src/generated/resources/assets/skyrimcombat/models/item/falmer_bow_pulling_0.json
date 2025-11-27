@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/bow",
+  "textures": {
+    "layer0": "skyrimcombat:item/falmer_bow_pulling_0"
+  }
+}

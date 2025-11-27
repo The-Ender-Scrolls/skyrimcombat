@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "skyrimcombat:block/deepslate_moonstone_ore_down",
+    "east": "skyrimcombat:block/deepslate_moonstone_ore_east",
+    "north": "skyrimcombat:block/deepslate_moonstone_ore_north",
+    "particle": "skyrimcombat:block/deepslate_moonstone_ore_particle",
+    "south": "skyrimcombat:block/deepslate_moonstone_ore_south",
+    "up": "skyrimcombat:block/deepslate_moonstone_ore_up",
+    "west": "skyrimcombat:block/deepslate_moonstone_ore_west"
+  }
+}

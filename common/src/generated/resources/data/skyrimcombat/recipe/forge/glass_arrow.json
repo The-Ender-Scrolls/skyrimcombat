@@ -1,0 +1,15 @@
+{
+  "type": "skyrimcombat:forge",
+  "category": "glass",
+  "ingredients": [
+    "skyrimcombat:malachite_ingot",
+    "minecraft:stick",
+    "minecraft:feather"
+  ],
+  "level": 70,
+  "result": {
+    "count": 8,
+    "id": "skyrimcombat:glass_arrow"
+  },
+  "xp": 5
+}

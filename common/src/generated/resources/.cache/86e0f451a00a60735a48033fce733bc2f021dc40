@@ -1,0 +1,19 @@
+// 1.21.10	2025-11-27T06:51:35.6836071	Tags for minecraft:block mod id skyrimcombat
+888f17a6a267be353b6d2a265c82868dec6925ce data/minecraft/tags/block/mineable/pickaxe.json
+b5c5e859ccec2cdb406eaa5f9b52e2948b83dc06 data/minecraft/tags/block/needs_diamond_tool.json
+7950de61fb7263dc0fa9695dd1286496f44284c0 data/minecraft/tags/block/needs_iron_tool.json
+6827f686ea6f220da3dee51ad749d59479f5101d data/minecraft/tags/block/needs_stone_tool.json
+df3fd9da66a50f39e0c6230f33b910465c736a20 data/skyrimcombat/tags/block/ores/corundum_ore.json
+cfc973899e7e13b775b501cc08e27af7ed59cc57 data/skyrimcombat/tags/block/ores/deepslate_corundum_ore.json
+ca72be92c47f41c0b386174d8db08d861d0d90df data/skyrimcombat/tags/block/ores/deepslate_ebony_ore.json
+d7bb273c2e9c8e551be4ed2cd4368fe335c2f55b data/skyrimcombat/tags/block/ores/deepslate_malachite_ore.json
+75cee7b3f5f006c73ccd97a89c1dee215b5b6c41 data/skyrimcombat/tags/block/ores/deepslate_moonstone_ore.json
+8673ba28d1e495627af63e8734ea6045710c9d88 data/skyrimcombat/tags/block/ores/deepslate_orichalcum_ore.json
+2f9e1fc301cfe08200b5746b2c6069e59faaade7 data/skyrimcombat/tags/block/ores/deepslate_quicksilver_ore.json
+d99a61f61dbf385de8d6a6253cfe313ce9bb6e9c data/skyrimcombat/tags/block/ores/deepslate_silver_ore.json
+0955bfbabf44f4b06ed3b221460a7950b00c00c1 data/skyrimcombat/tags/block/ores/ebony_ore.json
+7c485c48288719a04c79c17256dc51eba032704d data/skyrimcombat/tags/block/ores/malachite_ore.json
+08a073e003c05c49025d450228a471f39c327141 data/skyrimcombat/tags/block/ores/moonstone_ore.json
+26f4adb22a25b5b2822c6221cce2b94c12e8c045 data/skyrimcombat/tags/block/ores/orichalcum_ore.json
+dcd11ab145d65ef98311bc49913c2c3a866723e4 data/skyrimcombat/tags/block/ores/quicksilver_ore.json
+f3542cd4d0df012f0ae9ea8d6e47a24cc6acb130 data/skyrimcombat/tags/block/ores/silver_ore.json

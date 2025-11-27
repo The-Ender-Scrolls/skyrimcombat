@@ -1,0 +1,17 @@
+{
+  "type": "skyrimcombat:forge",
+  "category": "steel",
+  "ingredients": [
+    "minecraft:iron_ingot",
+    [
+      "skyrimcombat:steel_ingot",
+      "skyrimcombat:steel_ingot"
+    ]
+  ],
+  "level": 1,
+  "result": {
+    "count": 1,
+    "id": "skyrimcombat:steel_sword"
+  },
+  "xp": 5
+}

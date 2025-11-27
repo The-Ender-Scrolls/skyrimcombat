@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": "minecraft:cobblestone",
+    "L": "minecraft:lava_bucket",
+    "S": "minecraft:stone"
+  },
+  "pattern": [
+    "C C",
+    "CLC",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "skyrimcombat:blacksmith_forge"
+  }
+}

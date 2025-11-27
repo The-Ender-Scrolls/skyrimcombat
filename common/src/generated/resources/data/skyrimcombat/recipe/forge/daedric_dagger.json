@@ -1,0 +1,14 @@
+{
+  "type": "skyrimcombat:forge",
+  "category": "daedric",
+  "ingredients": [
+    "skyrimcombat:ebony_ingot",
+    "skyrimcombat:daedra_heart"
+  ],
+  "level": 90,
+  "result": {
+    "count": 1,
+    "id": "skyrimcombat:daedric_dagger"
+  },
+  "xp": 5
+}

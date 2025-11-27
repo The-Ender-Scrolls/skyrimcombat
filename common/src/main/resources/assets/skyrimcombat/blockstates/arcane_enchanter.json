@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "skyrimcombat:block/arcane_enchanter",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "skyrimcombat:block/arcane_enchanter"
+    },
+    "facing=south": {
+      "model": "skyrimcombat:block/arcane_enchanter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "skyrimcombat:block/arcane_enchanter",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "skyrimcombat:forge",
+  "category": "elven",
+  "ingredients": [
+    "minecraft:leather",
+    "minecraft:iron_ingot",
+    [
+      "skyrimcombat:moonstone_ingot",
+      "skyrimcombat:moonstone_ingot"
+    ]
+  ],
+  "level": 30,
+  "result": {
+    "count": 1,
+    "id": "skyrimcombat:elven_helmet"
+  },
+  "xp": 5
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/bow",
+  "textures": {
+    "layer0": "skyrimcombat:item/hunting_bow_pulling_1"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "skyrimcombat:item/orcish_leggings"
+  }
+}

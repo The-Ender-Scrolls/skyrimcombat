@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "skyrimcombat:block/ebony_ore_down",
+    "east": "skyrimcombat:block/ebony_ore_east",
+    "north": "skyrimcombat:block/ebony_ore_north",
+    "particle": "skyrimcombat:block/ebony_ore_particle",
+    "south": "skyrimcombat:block/ebony_ore_south",
+    "up": "skyrimcombat:block/ebony_ore_up",
+    "west": "skyrimcombat:block/ebony_ore_west"
+  }
+}

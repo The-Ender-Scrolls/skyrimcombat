@@ -1,0 +1,14 @@
+{
+  "type": "skyrimcombat:forge",
+  "category": "ebony",
+  "ingredients": [
+    "minecraft:stick",
+    "minecraft:feather"
+  ],
+  "level": 80,
+  "result": {
+    "count": 8,
+    "id": "skyrimcombat:ebony_arrow"
+  },
+  "xp": 5
+}

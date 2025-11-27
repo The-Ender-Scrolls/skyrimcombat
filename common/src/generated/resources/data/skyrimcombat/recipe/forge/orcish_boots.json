@@ -1,0 +1,18 @@
+{
+  "type": "skyrimcombat:forge",
+  "category": "orcish",
+  "ingredients": [
+    "minecraft:iron_ingot",
+    [
+      "skyrimcombat:orichalcum_ingot",
+      "skyrimcombat:orichalcum_ingot",
+      "skyrimcombat:orichalcum_ingot"
+    ]
+  ],
+  "level": 50,
+  "result": {
+    "count": 1,
+    "id": "skyrimcombat:orcish_boots"
+  },
+  "xp": 5
+}

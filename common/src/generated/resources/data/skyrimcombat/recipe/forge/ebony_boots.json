@@ -1,0 +1,17 @@
+{
+  "type": "skyrimcombat:forge",
+  "category": "ebony",
+  "ingredients": [
+    [
+      "skyrimcombat:ebony_ingot",
+      "skyrimcombat:ebony_ingot",
+      "skyrimcombat:ebony_ingot"
+    ]
+  ],
+  "level": 80,
+  "result": {
+    "count": 1,
+    "id": "skyrimcombat:ebony_boots"
+  },
+  "xp": 5
+}

@@ -1,0 +1,16 @@
+{
+  "type": "skyrimcombat:forge",
+  "category": "glass",
+  "ingredients": [
+    [
+      "skyrimcombat:malachite_ingot",
+      "skyrimcombat:malachite_ingot"
+    ]
+  ],
+  "level": 70,
+  "result": {
+    "count": 1,
+    "id": "skyrimcombat:glass_bow"
+  },
+  "xp": 5
+}

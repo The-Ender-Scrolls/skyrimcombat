@@ -1,0 +1,15 @@
+{
+  "type": "skyrimcombat:forge",
+  "category": "elven",
+  "ingredients": [
+    "minecraft:iron_ingot",
+    "skyrimcombat:moonstone_ingot",
+    "skyrimcombat:quicksilver_ingot"
+  ],
+  "level": 30,
+  "result": {
+    "count": 1,
+    "id": "skyrimcombat:elven_dagger"
+  },
+  "xp": 5
+}

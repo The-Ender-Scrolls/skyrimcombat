@@ -1,0 +1,21 @@
+{
+  "type": "skyrimcombat:forge",
+  "category": "elven",
+  "ingredients": [
+    [
+      "minecraft:iron_ingot",
+      "minecraft:iron_ingot"
+    ],
+    [
+      "skyrimcombat:moonstone_ingot",
+      "skyrimcombat:moonstone_ingot"
+    ],
+    "skyrimcombat:quicksilver_ingot"
+  ],
+  "level": 30,
+  "result": {
+    "count": 1,
+    "id": "skyrimcombat:elven_battleaxe"
+  },
+  "xp": 5
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "skyrimcombat:block/quicksilver_ore_down",
+    "east": "skyrimcombat:block/quicksilver_ore_east",
+    "north": "skyrimcombat:block/quicksilver_ore_north",
+    "particle": "skyrimcombat:block/quicksilver_ore_particle",
+    "south": "skyrimcombat:block/quicksilver_ore_south",
+    "up": "skyrimcombat:block/quicksilver_ore_up",
+    "west": "skyrimcombat:block/quicksilver_ore_west"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "skyrimcombat:block/silver_ore_down",
+    "east": "skyrimcombat:block/silver_ore_east",
+    "north": "skyrimcombat:block/silver_ore_north",
+    "particle": "skyrimcombat:block/silver_ore_particle",
+    "south": "skyrimcombat:block/silver_ore_south",
+    "up": "skyrimcombat:block/silver_ore_up",
+    "west": "skyrimcombat:block/silver_ore_west"
+  }
+}

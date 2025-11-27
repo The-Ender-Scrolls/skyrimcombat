@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "skyrimcombat:block/blacksmith_forge",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "skyrimcombat:block/blacksmith_forge"
+    },
+    "facing=south": {
+      "model": "skyrimcombat:block/blacksmith_forge",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "skyrimcombat:block/blacksmith_forge",
+      "y": 270
+    }
+  }
+}

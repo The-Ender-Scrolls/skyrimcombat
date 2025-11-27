@@ -1,0 +1,15 @@
+{
+  "type": "skyrimcombat:forge",
+  "category": "dwarven",
+  "ingredients": [
+    "minecraft:iron_ingot",
+    "minecraft:stick",
+    "minecraft:feather"
+  ],
+  "level": 30,
+  "result": {
+    "count": 8,
+    "id": "skyrimcombat:dwarven_arrow"
+  },
+  "xp": 5
+}

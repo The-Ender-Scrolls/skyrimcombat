@@ -1,0 +1,8 @@
+// 1.21.10	2025-11-27T06:51:35.6856187	Tags for minecraft:item mod id skyrimcombat
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/skyrimcombat/tags/item/empty_ingredient.json
+b5049186317412a74d7448374909ef8e1a8b0ad4 data/skyrimcombat/tags/item/repairs_dwarven.json
+574eea7fbec96ce7a72485d703e3947066e36289 data/skyrimcombat/tags/item/repairs_ebony.json
+71d69f5655d0728ddde58513f4de78cf357b9c2b data/skyrimcombat/tags/item/repairs_elven.json
+00ee6472f7f262924f017768438a8007d536ced9 data/skyrimcombat/tags/item/repairs_glass.json
+00fa654c4e3f54b80ecff60ab6d74752a68abf35 data/skyrimcombat/tags/item/repairs_orcish.json
+f64dd934692f4f9010818fcd1495f15846125b29 data/skyrimcombat/tags/item/repairs_steel.json

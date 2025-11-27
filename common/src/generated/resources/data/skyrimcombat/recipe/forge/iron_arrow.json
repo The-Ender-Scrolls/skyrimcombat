@@ -1,0 +1,14 @@
+{
+  "type": "skyrimcombat:forge",
+  "category": "iron",
+  "ingredients": [
+    "minecraft:stick",
+    "minecraft:feather"
+  ],
+  "level": 1,
+  "result": {
+    "count": 8,
+    "id": "skyrimcombat:iron_arrow"
+  },
+  "xp": 5
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "skyrimcombat:block/corundum_ore_down",
+    "east": "skyrimcombat:block/corundum_ore_east",
+    "north": "skyrimcombat:block/corundum_ore_north",
+    "particle": "skyrimcombat:block/corundum_ore_particle",
+    "south": "skyrimcombat:block/corundum_ore_south",
+    "up": "skyrimcombat:block/corundum_ore_up",
+    "west": "skyrimcombat:block/corundum_ore_west"
+  }
+}

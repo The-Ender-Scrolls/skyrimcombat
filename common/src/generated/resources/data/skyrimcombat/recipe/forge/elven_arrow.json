@@ -1,0 +1,15 @@
+{
+  "type": "skyrimcombat:forge",
+  "category": "elven",
+  "ingredients": [
+    "skyrimcombat:quicksilver_ingot",
+    "minecraft:stick",
+    "minecraft:feather"
+  ],
+  "level": 30,
+  "result": {
+    "count": 8,
+    "id": "skyrimcombat:elven_arrow"
+  },
+  "xp": 5
+}

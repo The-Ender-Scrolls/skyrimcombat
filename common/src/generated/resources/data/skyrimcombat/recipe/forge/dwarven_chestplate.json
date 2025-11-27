@@ -1,0 +1,19 @@
+{
+  "type": "skyrimcombat:forge",
+  "category": "dwarven",
+  "ingredients": [
+    [
+      "skyrimcombat:leather_strips",
+      "skyrimcombat:leather_strips",
+      "skyrimcombat:leather_strips"
+    ],
+    "minecraft:iron_ingot",
+    "skyrimcombat:steel_ingot"
+  ],
+  "level": 30,
+  "result": {
+    "count": 1,
+    "id": "skyrimcombat:dwarven_chestplate"
+  },
+  "xp": 5
+}

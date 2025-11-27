@@ -1,0 +1,17 @@
+{
+  "type": "skyrimcombat:forge",
+  "category": "iron",
+  "ingredients": [
+    [
+      "minecraft:iron_ingot",
+      "minecraft:iron_ingot",
+      "minecraft:iron_ingot"
+    ]
+  ],
+  "level": 1,
+  "result": {
+    "count": 1,
+    "id": "skyrimcombat:iron_boots"
+  },
+  "xp": 5
+}

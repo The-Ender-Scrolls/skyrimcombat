@@ -1,0 +1,16 @@
+{
+  "type": "skyrimcombat:forge",
+  "category": "orcish",
+  "ingredients": [
+    [
+      "skyrimcombat:orichalcum_ingot",
+      "skyrimcombat:orichalcum_ingot"
+    ]
+  ],
+  "level": 50,
+  "result": {
+    "count": 1,
+    "id": "skyrimcombat:orcish_bow"
+  },
+  "xp": 5
+}

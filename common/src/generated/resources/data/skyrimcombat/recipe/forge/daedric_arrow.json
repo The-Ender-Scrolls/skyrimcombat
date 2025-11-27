@@ -1,0 +1,15 @@
+{
+  "type": "skyrimcombat:forge",
+  "category": "daedric",
+  "ingredients": [
+    "skyrimcombat:daedra_heart",
+    "minecraft:stick",
+    "minecraft:feather"
+  ],
+  "level": 90,
+  "result": {
+    "count": 8,
+    "id": "skyrimcombat:daedric_arrow"
+  },
+  "xp": 5
+}
