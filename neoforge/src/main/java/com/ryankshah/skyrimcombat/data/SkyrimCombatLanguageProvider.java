@@ -16,9 +16,9 @@ public class SkyrimCombatLanguageProvider extends LanguageProvider {
     protected void addTranslations() {
         // Blocks
         addBlock(BlockRegistry.BLACKSMITH_FORGE, "Oven");
-        addItem(BlockRegistry.BLACKSMITH_FORGE_ITEM, "Oven");
+//        addItem(BlockRegistry.BLACKSMITH_FORGE_ITEM, "Oven");
         addBlock(BlockRegistry.ARCANE_ENCHANTER, "Arcane Enchanter");
-        addItem(BlockRegistry.ARCANE_ENCHANTER_ITEM, "Arcane Enchanter");
+//        addItem(BlockRegistry.ARCANE_ENCHANTER_ITEM, "Arcane Enchanter");
 
         addItem(ItemRegistry.CORUNDUM_INGOT, "Corundum Ingot");
         addItem(ItemRegistry.DWARVEN_METAL_INGOT, "Dwarven Metal Ingot");

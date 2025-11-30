@@ -11,7 +11,13 @@ import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.client.data.models.model.ItemModelUtils;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TextureMapping;
+import net.minecraft.client.data.models.model.TextureSlot;
+import net.minecraft.client.renderer.item.BlockModelWrapper;
+import net.minecraft.client.renderer.item.ConditionalItemModel;
 import net.minecraft.client.renderer.item.ItemModel;
+import net.minecraft.client.renderer.item.properties.conditional.Damaged;
+import net.minecraft.client.renderer.special.ShieldSpecialRenderer;
 import net.minecraft.core.Holder;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -20,6 +26,7 @@ import net.minecraft.world.item.ShieldItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
 
+import java.util.Collections;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -221,35 +228,34 @@ public class SkyrimCombatModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ItemRegistry.FALMER_ARROW.get(), ModelTemplates.FLAT_ITEM);
 
 // Shields
-//        itemModels.generateFlatItem(ItemRegistry.DAEDRIC_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-//        itemModels.generateFlatItem(ItemRegistry.DWARVEN_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-//        itemModels.generateFlatItem(ItemRegistry.EBONY_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-//        itemModels.generateFlatItem(ItemRegistry.ELVEN_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-//        itemModels.generateFlatItem(ItemRegistry.GLASS_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-//        itemModels.generateFlatItem(ItemRegistry.IRON_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-//        itemModels.generateFlatItem(ItemRegistry.ORCISH_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-//        itemModels.generateFlatItem(ItemRegistry.STEEL_SHIELD.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateShield(ItemRegistry.DAEDRIC_SHIELD.get());
+        itemModels.generateShield(ItemRegistry.DWARVEN_SHIELD.get());
+        itemModels.generateShield(ItemRegistry.EBONY_SHIELD.get());
+        itemModels.generateShield(ItemRegistry.ELVEN_SHIELD.get());
+        itemModels.generateShield(ItemRegistry.GLASS_SHIELD.get());
+        itemModels.generateShield(ItemRegistry.IRON_SHIELD.get());
+        itemModels.generateShield(ItemRegistry.ORCISH_SHIELD.get());
+        itemModels.generateShield(ItemRegistry.STEEL_SHIELD.get());
 
-// Steel armor (uncomment these)
         itemModels.generateFlatItem(ItemRegistry.STEEL_HELMET.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ItemRegistry.STEEL_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ItemRegistry.STEEL_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ItemRegistry.STEEL_BOOTS.get(), ModelTemplates.FLAT_ITEM);
 
-        blockModels.createGenericCube(BlockRegistry.CORUNDUM_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.DEEPSLATE_CORUNDUM_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.EBONY_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.DEEPSLATE_EBONY_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.MALACHITE_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.DEEPSLATE_MALACHITE_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.MOONSTONE_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.DEEPSLATE_MOONSTONE_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.ORICHALCUM_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.DEEPSLATE_ORICHALCUM_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.QUICKSILVER_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.DEEPSLATE_QUICKSILVER_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.SILVER_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.DEEPSLATE_SILVER_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.CORUNDUM_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.DEEPSLATE_CORUNDUM_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.EBONY_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.DEEPSLATE_EBONY_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.MALACHITE_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.DEEPSLATE_MALACHITE_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.MOONSTONE_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.DEEPSLATE_MOONSTONE_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.ORICHALCUM_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.DEEPSLATE_ORICHALCUM_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.QUICKSILVER_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.DEEPSLATE_QUICKSILVER_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.SILVER_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.DEEPSLATE_SILVER_ORE.get());
 
 //        blockModels.blockStateOutput.accept(BlockModelGenerators.createSimpleBlock(BlockRegistry.BLACKSMITH_FORGE.get(), ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "block/blacksmith_forge")).with(BlockModelGenerators.createHorizontalFacingDispatchAlt()));
 //        blockModels.registerSimpleItemModel(BlockRegistry.BLACKSMITH_FORGE.get(), ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "block/blacksmith_forge"));
@@ -260,7 +266,7 @@ public class SkyrimCombatModelProvider extends ModelProvider {
 
     @Override
     protected Stream<? extends Holder<Block>> getKnownBlocks() {
-        return super.getKnownBlocks().filter(blockHolder -> !(
+        return BlockRegistry.BLOCKS.getEntries().stream().map(RegistryObject::asHolder).filter(blockHolder -> !(
                 blockHolder.value() instanceof CropBlock ||
                         blockHolder.value() instanceof BlacksmithForgeBlock ||
                         blockHolder.value() instanceof ArcaneEnchanterBlock

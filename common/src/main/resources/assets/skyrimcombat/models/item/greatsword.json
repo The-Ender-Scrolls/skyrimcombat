@@ -1,5 +1,9 @@
 {
   "parent": "minecraft:item/generated",
+  "textures": {
+    "0": "skyrimcombat:item/daedric_greatsword",
+    "particle": "skyrimcombat:item/daedric_greatsword"
+  },
   "display": {
     "thirdperson_righthand": {
       "rotation": [ 0, -90, 55 ],
@@ -21,13 +25,5 @@
       "translation": [ 1.13, 3.2, 1.13 ],
       "scale": [ 0.68, 0.68, 0.68 ]
     }
-  },
-  "overrides": [
-    {
-      "predicate": {
-        "skyrimcombat:no_use": 1.0
-      },
-      "model": "skyrimcombat:item/greatsword_no_use"
-    }
-  ]
+  }
 }

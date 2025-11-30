@@ -25,12 +25,7 @@ public class ForgeRecipe implements Recipe<BlankRecipeInput>
         this.recipeItems = recipeItems;
         this.level = level;
         this.xp = xp;
-//        RecipeTypeInit.ALCHEMY.get();
     }
-
-//    public AlchemyRecipe(ResourceLocation id, String category, ItemStack stackToCreate, int level, int xp, ItemStack... recipeItems) {
-//        this(id, category, stackToCreate, level, xp, Arrays.asList(recipeItems));
-//    }
 
     public ForgeRecipe(String category, ItemStack itemStack, NonNullList<Ingredient> itemStacks, int level, int xp) {
         this(category, itemStack, level, xp, itemStacks);
