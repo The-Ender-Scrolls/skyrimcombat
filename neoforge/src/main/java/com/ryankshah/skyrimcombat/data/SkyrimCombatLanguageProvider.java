@@ -15,8 +15,8 @@ public class SkyrimCombatLanguageProvider extends LanguageProvider {
     @Override
     protected void addTranslations() {
         // Blocks
-        addBlock(BlockRegistry.BLACKSMITH_FORGE, "Oven");
-        addItem(BlockRegistry.BLACKSMITH_FORGE_ITEM, "Oven");
+        addBlock(BlockRegistry.BLACKSMITH_FORGE, "Blacksmith Forge");
+        addItem(BlockRegistry.BLACKSMITH_FORGE_ITEM, "Blacksmith Forge");
         addBlock(BlockRegistry.ARCANE_ENCHANTER, "Arcane Enchanter");
         addItem(BlockRegistry.ARCANE_ENCHANTER_ITEM, "Arcane Enchanter");
 
@@ -214,6 +214,21 @@ public class SkyrimCombatLanguageProvider extends LanguageProvider {
         addBlock(BlockRegistry.DEEPSLATE_QUICKSILVER_ORE, "Quicksilver Ore");
         addBlock(BlockRegistry.SILVER_ORE, "Silver Ore");
         addBlock(BlockRegistry.DEEPSLATE_SILVER_ORE, "Silver Ore");
+
+        addItem(BlockRegistry.CORUNDUM_ORE_ITEM, "Corundum Ore");
+        addItem(BlockRegistry.DEEPSLATE_CORUNDUM_ORE_ITEM, "Corundum Ore");
+        addItem(BlockRegistry.EBONY_ORE_ITEM, "Ebony Ore");
+        addItem(BlockRegistry.DEEPSLATE_EBONY_ORE_ITEM, "Ebony Ore");
+        addItem(BlockRegistry.MALACHITE_ORE_ITEM, "Malachite Ore");
+        addItem(BlockRegistry.DEEPSLATE_MALACHITE_ORE_ITEM, "Malachite Ore");
+        addItem(BlockRegistry.MOONSTONE_ORE_ITEM, "Moonstone Ore");
+        addItem(BlockRegistry.DEEPSLATE_MOONSTONE_ORE_ITEM, "Moonstone Ore");
+        addItem(BlockRegistry.ORICHALCUM_ORE_ITEM, "Orichalcum Ore");
+        addItem(BlockRegistry.DEEPSLATE_ORICHALCUM_ORE_ITEM, "Orichalcum Ore");
+        addItem(BlockRegistry.QUICKSILVER_ORE_ITEM, "Quicksilver Ore");
+        addItem(BlockRegistry.DEEPSLATE_QUICKSILVER_ORE_ITEM, "Quicksilver Ore");
+        addItem(BlockRegistry.SILVER_ORE_ITEM, "Silver Ore");
+        addItem(BlockRegistry.DEEPSLATE_SILVER_ORE_ITEM, "Silver Ore");
 
         // Creative Tab
         add("creativetab.skyrimcombat", "Skyrim Combat");
