@@ -171,10 +171,10 @@ public class SkyrimCombatModelProvider extends ModelProvider {
         sword(itemModels, ItemRegistry.ORCISH_WAR_AXE.get());
         sword(itemModels, ItemRegistry.ORCISH_WARHAMMER.get());
 
-//        itemModels.generateFlatItem(ItemRegistry.STEEL_HELMET.get(), ModelTemplates.FLAT_ITEM);
-//        itemModels.generateFlatItem(ItemRegistry.STEEL_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
-//        itemModels.generateFlatItem(ItemRegistry.STEEL_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
-//        itemModels.generateFlatItem(ItemRegistry.STEEL_BOOTS.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ItemRegistry.STEEL_HELMET.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ItemRegistry.STEEL_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ItemRegistry.STEEL_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ItemRegistry.STEEL_BOOTS.get(), ModelTemplates.FLAT_ITEM);
         sword(itemModels, ItemRegistry.STEEL_DAGGER.get());
         sword(itemModels, ItemRegistry.STEEL_SWORD.get());
         sword(itemModels, ItemRegistry.STEEL_BATTLEAXE.get());
@@ -218,20 +218,14 @@ public class SkyrimCombatModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ItemRegistry.FALMER_ARROW.get(), ModelTemplates.FLAT_ITEM);
 
 // Shields
-        itemModels.generateFlatItem(ItemRegistry.DAEDRIC_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemRegistry.DWARVEN_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemRegistry.EBONY_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemRegistry.ELVEN_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemRegistry.GLASS_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemRegistry.IRON_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemRegistry.ORCISH_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemRegistry.STEEL_SHIELD.get(), ModelTemplates.FLAT_ITEM);
-
-// Steel armor (uncomment these)
-        itemModels.generateFlatItem(ItemRegistry.STEEL_HELMET.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemRegistry.STEEL_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemRegistry.STEEL_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(ItemRegistry.STEEL_BOOTS.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateShield(ItemRegistry.DAEDRIC_SHIELD.get());
+        itemModels.generateShield(ItemRegistry.DWARVEN_SHIELD.get());
+        itemModels.generateShield(ItemRegistry.EBONY_SHIELD.get());
+        itemModels.generateShield(ItemRegistry.ELVEN_SHIELD.get());
+        itemModels.generateShield(ItemRegistry.GLASS_SHIELD.get());
+        itemModels.generateShield(ItemRegistry.IRON_SHIELD.get());
+        itemModels.generateShield(ItemRegistry.ORCISH_SHIELD.get());
+        itemModels.generateShield(ItemRegistry.STEEL_SHIELD.get());
 
         blockModels.createGenericCube(BlockRegistry.CORUNDUM_ORE.get());
         blockModels.createGenericCube(BlockRegistry.DEEPSLATE_CORUNDUM_ORE.get());
