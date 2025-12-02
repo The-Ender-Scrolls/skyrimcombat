@@ -3,6 +3,11 @@
   "category": "dwarven",
   "ingredients": [
     [
+      "skyrimcombat:dwarven_metal_ingot",
+      "skyrimcombat:dwarven_metal_ingot",
+      "skyrimcombat:dwarven_metal_ingot"
+    ],
+    [
       "skyrimcombat:leather_strips",
       "skyrimcombat:leather_strips",
       "skyrimcombat:leather_strips"

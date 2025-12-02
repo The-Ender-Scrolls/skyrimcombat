@@ -2,6 +2,7 @@
   "type": "skyrimcombat:forge",
   "category": "elven",
   "ingredients": [
+    "skyrimcombat:leather_strips",
     "minecraft:leather",
     "minecraft:iron_ingot",
     [

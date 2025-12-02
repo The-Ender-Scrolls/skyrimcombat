@@ -64,6 +64,9 @@ def loaderAttribute = Attribute.of('io.github.mcgradleconventions.loader', Strin
         }
     }
 }
+
+//sourceSets.main.resources { srcDir file('../common/src/generated/resources').getAbsolutePath() }
+
 sourceSets.configureEach {
     [it.compileClasspathConfigurationName, it.runtimeClasspathConfigurationName].each { variant->
         configurations.named("$variant") {
@@ -73,5 +76,3 @@ sourceSets.configureEach {
         }
     }
 }
-
-sourceSets.main.resources { srcDir file('../common/src/generated/resources').getAbsolutePath() }

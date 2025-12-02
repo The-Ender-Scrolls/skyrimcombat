@@ -9,8 +9,11 @@ import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
 import net.minecraft.client.data.models.model.ItemModelUtils;
+import net.minecraft.client.data.models.model.ModelTemplate;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TextureSlot;
 import net.minecraft.client.renderer.item.ItemModel;
+import net.minecraft.client.renderer.item.properties.numeric.UseDuration;
 import net.minecraft.core.Holder;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -18,9 +21,22 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
 
+import java.util.Optional;
 import java.util.stream.Stream;
 
-public class SkyrimCombatModelProvider extends ModelProvider {
+public class SkyrimCombatModelProvider extends ModelProvider
+{
+    private static final ModelTemplate GREATSWORD = new ModelTemplate(
+            Optional.of(ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "item/greatsword")),
+            Optional.empty(),
+            TextureSlot.LAYER0
+    );
+
+    private static final ModelTemplate GREATSWORD_BLOCKING = new ModelTemplate(
+            Optional.of(ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "item/greatsword_blocking")),
+            Optional.empty(),
+            TextureSlot.LAYER0
+    );
 
     public SkyrimCombatModelProvider(PackOutput output) {
         super(output, Constants.MOD_ID);
@@ -56,7 +72,7 @@ public class SkyrimCombatModelProvider extends ModelProvider {
         greatsword(itemModels, ItemRegistry.ANCIENT_NORD_GREATSWORD.get());
         sword(itemModels, ItemRegistry.ANCIENT_NORD_WAR_AXE.get());
         sword(itemModels, ItemRegistry.ANCIENT_NORD_BATTLEAXE.get());
-        itemModels.generateBow(ItemRegistry.ANCIENT_NORD_BOW.get());
+        generateCustomBow(itemModels, ItemRegistry.ANCIENT_NORD_BOW.get());
 
         itemModels.generateFlatItem(ItemRegistry.DAEDRIC_HELMET.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ItemRegistry.DAEDRIC_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
@@ -65,7 +81,7 @@ public class SkyrimCombatModelProvider extends ModelProvider {
         sword(itemModels, ItemRegistry.DAEDRIC_DAGGER.get());
         sword(itemModels, ItemRegistry.DAEDRIC_SWORD.get());
         sword(itemModels, ItemRegistry.DAEDRIC_BATTLEAXE.get());
-        itemModels.generateBow(ItemRegistry.DAEDRIC_BOW.get());
+        generateCustomBow(itemModels, ItemRegistry.DAEDRIC_BOW.get());
         greatsword(itemModels, ItemRegistry.DAEDRIC_GREATSWORD.get());
         sword(itemModels, ItemRegistry.DAEDRIC_MACE.get());
         sword(itemModels, ItemRegistry.DAEDRIC_WAR_AXE.get());
@@ -74,7 +90,7 @@ public class SkyrimCombatModelProvider extends ModelProvider {
         sword(itemModels, ItemRegistry.DRAGONBONE_DAGGER.get());
         sword(itemModels, ItemRegistry.DRAGONBONE_SWORD.get());
         sword(itemModels, ItemRegistry.DRAGONBONE_BATTLEAXE.get());
-        itemModels.generateBow(ItemRegistry.DRAGONBONE_BOW.get());
+        generateCustomBow(itemModels, ItemRegistry.DRAGONBONE_BOW.get());
         greatsword(itemModels, ItemRegistry.DRAGONBONE_GREATSWORD.get());
         sword(itemModels, ItemRegistry.DRAGONBONE_MACE.get());
         sword(itemModels, ItemRegistry.DRAGONBONE_WAR_AXE.get());
@@ -87,7 +103,7 @@ public class SkyrimCombatModelProvider extends ModelProvider {
         sword(itemModels, ItemRegistry.DWARVEN_DAGGER.get());
         sword(itemModels, ItemRegistry.DWARVEN_SWORD.get());
         sword(itemModels, ItemRegistry.DWARVEN_BATTLEAXE.get());
-        itemModels.generateBow(ItemRegistry.DWARVEN_BOW.get());
+        generateCustomBow(itemModels, ItemRegistry.DWARVEN_BOW.get());
         greatsword(itemModels, ItemRegistry.DWARVEN_GREATSWORD.get());
         sword(itemModels, ItemRegistry.DWARVEN_MACE.get());
         sword(itemModels, ItemRegistry.DWARVEN_WAR_AXE.get());
@@ -100,7 +116,7 @@ public class SkyrimCombatModelProvider extends ModelProvider {
         sword(itemModels, ItemRegistry.EBONY_DAGGER.get());
         sword(itemModels, ItemRegistry.EBONY_SWORD.get());
         sword(itemModels, ItemRegistry.EBONY_BATTLEAXE.get());
-        itemModels.generateBow(ItemRegistry.EBONY_BOW.get());
+        generateCustomBow(itemModels, ItemRegistry.EBONY_BOW.get());
         greatsword(itemModels, ItemRegistry.EBONY_GREATSWORD.get());
         sword(itemModels, ItemRegistry.EBONY_MACE.get());
         sword(itemModels, ItemRegistry.EBONY_WAR_AXE.get());
@@ -113,7 +129,7 @@ public class SkyrimCombatModelProvider extends ModelProvider {
         sword(itemModels, ItemRegistry.ELVEN_DAGGER.get());
         sword(itemModels, ItemRegistry.ELVEN_SWORD.get());
         sword(itemModels, ItemRegistry.ELVEN_BATTLEAXE.get());;
-        itemModels.generateBow(ItemRegistry.ELVEN_BOW.get());
+        generateCustomBow(itemModels, ItemRegistry.ELVEN_BOW.get());
         greatsword(itemModels, ItemRegistry.ELVEN_GREATSWORD.get());
         sword(itemModels, ItemRegistry.ELVEN_MACE.get());
         sword(itemModels, ItemRegistry.ELVEN_WAR_AXE.get());
@@ -124,7 +140,7 @@ public class SkyrimCombatModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ItemRegistry.FALMER_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ItemRegistry.FALMER_BOOTS.get(), ModelTemplates.FLAT_ITEM);
         sword(itemModels, ItemRegistry.FALMER_SWORD.get());
-        itemModels.generateBow(ItemRegistry.FALMER_BOW.get());
+        generateCustomBow(itemModels, ItemRegistry.FALMER_BOW.get());
         sword(itemModels, ItemRegistry.FALMER_WAR_AXE.get());
 
         itemModels.generateFlatItem(ItemRegistry.GLASS_HELMET.get(), ModelTemplates.FLAT_ITEM);
@@ -134,7 +150,7 @@ public class SkyrimCombatModelProvider extends ModelProvider {
         sword(itemModels, ItemRegistry.GLASS_DAGGER.get());
         sword(itemModels, ItemRegistry.GLASS_SWORD.get());
         sword(itemModels, ItemRegistry.GLASS_BATTLEAXE.get());
-        itemModels.generateBow(ItemRegistry.GLASS_BOW.get());
+        generateCustomBow(itemModels, ItemRegistry.GLASS_BOW.get());
         greatsword(itemModels, ItemRegistry.GLASS_GREATSWORD.get());
         sword(itemModels, ItemRegistry.GLASS_MACE.get());
         sword(itemModels, ItemRegistry.GLASS_WAR_AXE.get());
@@ -165,7 +181,7 @@ public class SkyrimCombatModelProvider extends ModelProvider {
         sword(itemModels, ItemRegistry.ORCISH_DAGGER.get());
         sword(itemModels, ItemRegistry.ORCISH_SWORD.get());
         sword(itemModels, ItemRegistry.ORCISH_BATTLEAXE.get());
-        itemModels.generateBow(ItemRegistry.ORCISH_BOW.get());
+        generateCustomBow(itemModels, ItemRegistry.ORCISH_BOW.get());
         greatsword(itemModels, ItemRegistry.ORCISH_GREATSWORD.get());
         sword(itemModels, ItemRegistry.ORCISH_MACE.get());
         sword(itemModels, ItemRegistry.ORCISH_WAR_AXE.get());
@@ -188,8 +204,9 @@ public class SkyrimCombatModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ItemRegistry.STORMCLOAK_OFFICER_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ItemRegistry.STORMCLOAK_OFFICER_BOOTS.get(), ModelTemplates.FLAT_ITEM);
 
-        itemModels.generateBow(ItemRegistry.HUNTING_BOW.get());
-        itemModels.generateBow(ItemRegistry.LONGBOW.get());
+//        itemModels.generateFlatItem(ItemRegistry.HUNTING_BOW.get(), ModelTemplates.BOW);
+        generateCustomBow(itemModels, ItemRegistry.HUNTING_BOW.get());
+        generateCustomBow(itemModels, ItemRegistry.LONGBOW.get());
 
         itemModels.generateFlatItem(ItemRegistry.SCALED_HELMET.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ItemRegistry.SCALED_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
@@ -217,7 +234,7 @@ public class SkyrimCombatModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ItemRegistry.STEEL_ARROW.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ItemRegistry.FALMER_ARROW.get(), ModelTemplates.FLAT_ITEM);
 
-// Shields
+        // Shields
         itemModels.generateShield(ItemRegistry.DAEDRIC_SHIELD.get());
         itemModels.generateShield(ItemRegistry.DWARVEN_SHIELD.get());
         itemModels.generateShield(ItemRegistry.EBONY_SHIELD.get());
@@ -227,20 +244,20 @@ public class SkyrimCombatModelProvider extends ModelProvider {
         itemModels.generateShield(ItemRegistry.ORCISH_SHIELD.get());
         itemModels.generateShield(ItemRegistry.STEEL_SHIELD.get());
 
-        blockModels.createGenericCube(BlockRegistry.CORUNDUM_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.DEEPSLATE_CORUNDUM_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.EBONY_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.DEEPSLATE_EBONY_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.MALACHITE_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.DEEPSLATE_MALACHITE_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.MOONSTONE_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.DEEPSLATE_MOONSTONE_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.ORICHALCUM_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.DEEPSLATE_ORICHALCUM_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.QUICKSILVER_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.DEEPSLATE_QUICKSILVER_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.SILVER_ORE.get());
-        blockModels.createGenericCube(BlockRegistry.DEEPSLATE_SILVER_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.CORUNDUM_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.DEEPSLATE_CORUNDUM_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.EBONY_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.DEEPSLATE_EBONY_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.MALACHITE_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.DEEPSLATE_MALACHITE_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.MOONSTONE_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.DEEPSLATE_MOONSTONE_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.ORICHALCUM_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.DEEPSLATE_ORICHALCUM_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.QUICKSILVER_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.DEEPSLATE_QUICKSILVER_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.SILVER_ORE.get());
+        blockModels.createTrivialCube(BlockRegistry.DEEPSLATE_SILVER_ORE.get());
 
 //        blockModels.blockStateOutput.accept(BlockModelGenerators.createSimpleBlock(BlockRegistry.BLACKSMITH_FORGE.get(), ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "block/blacksmith_forge")).with(BlockModelGenerators.createHorizontalFacingDispatchAlt()));
 //        blockModels.registerSimpleItemModel(BlockRegistry.BLACKSMITH_FORGE.get(), ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "block/blacksmith_forge"));
@@ -262,9 +279,61 @@ public class SkyrimCombatModelProvider extends ModelProvider {
         generator.generateFlatItem(item, ModelTemplates.FLAT_HANDHELD_ITEM);
     }
 
+    private void generateCustomBow(ItemModelGenerators generator, Item bowItem) {
+        String itemName = bowItem.getDescriptionId().replace("item.skyrimcombat.", "");
+
+        // Create the base model
+        ResourceLocation baseModel = generator.createFlatItemModel(bowItem, ModelTemplates.BOW);
+
+        // Create pulling models
+        ItemModel.Unbaked pulling0 = ItemModelUtils.plainModel(
+                generator.createFlatItemModel(bowItem, "_pulling_0", ModelTemplates.BOW)
+        );
+        ItemModel.Unbaked pulling1 = ItemModelUtils.plainModel(
+                generator.createFlatItemModel(bowItem, "_pulling_1", ModelTemplates.BOW)
+        );
+        ItemModel.Unbaked pulling2 = ItemModelUtils.plainModel(
+                generator.createFlatItemModel(bowItem, "_pulling_2", ModelTemplates.BOW)
+        );
+
+        ItemModel.Unbaked baseUnbaked = ItemModelUtils.plainModel(baseModel);
+
+        // Create the conditional model
+        generator.itemModelOutput.accept(
+                bowItem,
+                ItemModelUtils.conditional(
+                        ItemModelUtils.isUsingItem(),
+                        ItemModelUtils.rangeSelect(
+                                new UseDuration(false),
+                                0.05F,
+                                pulling0,
+                                ItemModelUtils.override(pulling1, 0.65F),
+                                ItemModelUtils.override(pulling2, 0.9F)
+                        ),
+                        baseUnbaked
+                )
+        );
+    }
+
     private void greatsword(ItemModelGenerators generator, Item item) {
-        ItemModel.Unbaked itemmodel$unbaked = ItemModelUtils.plainModel(ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "item/greatsword"));
-        ItemModel.Unbaked itemmodel$unbaked1 = ItemModelUtils.plainModel(ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "item/greatsword_blocking"));
+        String itemName = item.getDescriptionId().replace("item.skyrimcombat.", "");
+
+        // Create the base model
+        ResourceLocation baseModel = generator.createFlatItemModel(
+                item,
+                GREATSWORD
+        );
+
+        // Create the blocking model
+        ResourceLocation blockingModel = generator.createFlatItemModel(
+                item,
+                "_blocking",
+                GREATSWORD_BLOCKING
+        );
+
+        // Set up the conditional switching
+        ItemModel.Unbaked itemmodel$unbaked = ItemModelUtils.plainModel(baseModel);
+        ItemModel.Unbaked itemmodel$unbaked1 = ItemModelUtils.plainModel(blockingModel);
         generator.generateBooleanDispatch(item, ItemModelUtils.isUsingItem(), itemmodel$unbaked1, itemmodel$unbaked);
     }
 }

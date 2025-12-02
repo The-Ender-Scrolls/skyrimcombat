@@ -2,6 +2,7 @@
   "type": "skyrimcombat:forge",
   "category": "orcish",
   "ingredients": [
+    "minecraft:iron_ingot",
     [
       "skyrimcombat:orichalcum_ingot",
       "skyrimcombat:orichalcum_ingot"

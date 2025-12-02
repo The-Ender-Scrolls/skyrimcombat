@@ -236,15 +236,15 @@ public class ForgeScreen extends Screen
         }
 
         if(event.key() == GLFW.GLFW_KEY_RIGHT || event.key() == GLFW.GLFW_KEY_D) {
-            if(this.categoryChosen) {
-                this.categoryChosen = false;
+            if(!this.categoryChosen) {
+                this.categoryChosen = true;
                 this.currentItem = 0;
             }
         }
 
         if(event.key() == GLFW.GLFW_KEY_LEFT || event.key() == GLFW.GLFW_KEY_A) {
-            if(!this.categoryChosen) {
-                this.categoryChosen = true;
+            if(this.categoryChosen) {
+                this.categoryChosen = false;
                 this.currentItem = 0;
             }
         }

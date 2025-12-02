@@ -2,6 +2,7 @@
   "type": "skyrimcombat:forge",
   "category": "elven",
   "ingredients": [
+    "skyrimcombat:moonstone_ingot",
     "skyrimcombat:quicksilver_ingot",
     "minecraft:stick",
     "minecraft:feather"

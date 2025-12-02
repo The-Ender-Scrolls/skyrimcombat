@@ -3,6 +3,10 @@
   "category": "glass",
   "ingredients": [
     [
+      "skyrimcombat:leather_strips",
+      "skyrimcombat:leather_strips"
+    ],
+    [
       "skyrimcombat:moonstone_ingot",
       "skyrimcombat:moonstone_ingot"
     ],

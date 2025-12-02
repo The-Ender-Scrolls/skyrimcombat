@@ -2,6 +2,7 @@
   "type": "skyrimcombat:forge",
   "category": "ebony",
   "ingredients": [
+    "skyrimcombat:ebony_ingot",
     "minecraft:stick",
     "minecraft:feather"
   ],

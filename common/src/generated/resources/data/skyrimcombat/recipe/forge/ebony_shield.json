@@ -2,6 +2,7 @@
   "type": "skyrimcombat:forge",
   "category": "ebony",
   "ingredients": [
+    "skyrimcombat:leather_strips",
     [
       "skyrimcombat:ebony_ingot",
       "skyrimcombat:ebony_ingot",

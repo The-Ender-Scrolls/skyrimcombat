@@ -2,6 +2,10 @@
   "type": "skyrimcombat:forge",
   "category": "steel",
   "ingredients": [
+    [
+      "skyrimcombat:leather_strips",
+      "skyrimcombat:leather_strips"
+    ],
     "minecraft:iron_ingot",
     [
       "skyrimcombat:steel_ingot",

@@ -2,6 +2,7 @@
   "type": "skyrimcombat:forge",
   "category": "daedric",
   "ingredients": [
+    "skyrimcombat:ebony_ingot",
     "skyrimcombat:daedra_heart",
     "minecraft:stick",
     "minecraft:feather"

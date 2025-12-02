@@ -1,0 +1,6 @@
+{
+  "parent": "skyrimcombat:item/greatsword",
+  "textures": {
+    "layer0": "skyrimcombat:item/dwarven_greatsword"
+  }
+}

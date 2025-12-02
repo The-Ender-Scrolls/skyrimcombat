@@ -2,6 +2,7 @@
   "type": "skyrimcombat:forge",
   "category": "orcish",
   "ingredients": [
+    "skyrimcombat:leather_strips",
     "minecraft:iron_ingot",
     "skyrimcombat:orichalcum_ingot"
   ],

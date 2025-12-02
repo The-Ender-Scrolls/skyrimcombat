@@ -2,6 +2,7 @@
   "type": "skyrimcombat:forge",
   "category": "iron",
   "ingredients": [
+    "minecraft:iron_ingot",
     "minecraft:stick",
     "minecraft:feather"
   ],

@@ -2,6 +2,7 @@
   "type": "skyrimcombat:forge",
   "category": "orcish",
   "ingredients": [
+    "skyrimcombat:orichalcum_ingot",
     "minecraft:stick",
     "minecraft:feather"
   ],

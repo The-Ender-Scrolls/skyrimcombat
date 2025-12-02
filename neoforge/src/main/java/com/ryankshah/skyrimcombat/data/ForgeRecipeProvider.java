@@ -126,7 +126,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DAEDRIC_ARROW.get(),
                     new ForgeRecipe("daedric", new ItemStack(ItemRegistry.DAEDRIC_ARROW.get(), 8), 90, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get()),
                                     Ingredient.of(ItemRegistry.DAEDRA_HEART.get()),
                                     Ingredient.of(Items.STICK),
@@ -136,7 +136,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DAEDRIC_DAGGER.get(),
                     new ForgeRecipe("daedric", new ItemStack(ItemRegistry.DAEDRIC_DAGGER.get(), 1), 90, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get()),
                                     Ingredient.of(ItemRegistry.DAEDRA_HEART.get())
@@ -145,7 +145,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DAEDRIC_SWORD.get(),
                     new ForgeRecipe("daedric", new ItemStack(ItemRegistry.DAEDRIC_SWORD.get(), 1), 90, 13,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()),
                                     Ingredient.of(ItemRegistry.DAEDRA_HEART.get())
@@ -154,7 +154,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DAEDRIC_BATTLEAXE.get(),
                     new ForgeRecipe("daedric", new ItemStack(ItemRegistry.DAEDRIC_BATTLEAXE.get(), 1), 90, 27,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()),
                                     Ingredient.of(ItemRegistry.DAEDRA_HEART.get())
@@ -163,7 +163,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DAEDRIC_BOW.get(),
                     new ForgeRecipe("daedric", new ItemStack(ItemRegistry.DAEDRIC_BOW.get(), 1), 90, 25,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()),
                                     Ingredient.of(ItemRegistry.DAEDRA_HEART.get())
@@ -172,7 +172,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DAEDRIC_GREATSWORD.get(),
                     new ForgeRecipe("daedric", new ItemStack(ItemRegistry.DAEDRIC_GREATSWORD.get(), 1), 90, 25,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()),
                                     Ingredient.of(ItemRegistry.DAEDRA_HEART.get())
@@ -181,7 +181,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DAEDRIC_MACE.get(),
                     new ForgeRecipe("daedric", new ItemStack(ItemRegistry.DAEDRIC_MACE.get(), 1), 90, 18,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()),
                                     Ingredient.of(ItemRegistry.DAEDRA_HEART.get())
@@ -190,7 +190,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DAEDRIC_WAR_AXE.get(),
                     new ForgeRecipe("daedric", new ItemStack(ItemRegistry.DAEDRIC_WAR_AXE.get(), 1), 90, 15,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()),
                                     Ingredient.of(ItemRegistry.DAEDRA_HEART.get())
@@ -199,7 +199,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DAEDRIC_WARHAMMER.get(),
                     new ForgeRecipe("daedric", new ItemStack(ItemRegistry.DAEDRIC_WARHAMMER.get(), 1), 90, 40,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()),
                                     Ingredient.of(ItemRegistry.DAEDRA_HEART.get())
@@ -208,7 +208,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DAEDRIC_HELMET.get(),
                     new ForgeRecipe("daedric", new ItemStack(ItemRegistry.DAEDRIC_HELMET.get(), 1), 90, 16,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()),
                                     Ingredient.of(ItemRegistry.DAEDRA_HEART.get())
@@ -217,7 +217,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DAEDRIC_CHESTPLATE.get(),
                     new ForgeRecipe("daedric", new ItemStack(ItemRegistry.DAEDRIC_CHESTPLATE.get(), 1), 90, 32,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()),
                                     Ingredient.of(ItemRegistry.DAEDRA_HEART.get())
@@ -226,7 +226,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DAEDRIC_LEGGINGS.get(),
                     new ForgeRecipe("daedric", new ItemStack(ItemRegistry.DAEDRIC_LEGGINGS.get(), 1), 90, 32,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()),
                                     Ingredient.of(ItemRegistry.DAEDRA_HEART.get())
@@ -235,7 +235,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DAEDRIC_BOOTS.get(),
                     new ForgeRecipe("daedric", new ItemStack(ItemRegistry.DAEDRIC_BOOTS.get(), 1), 90, 16,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()),
                                     Ingredient.of(ItemRegistry.DAEDRA_HEART.get())
@@ -244,7 +244,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DAEDRIC_SHIELD.get(),
                     new ForgeRecipe("daedric", new ItemStack(ItemRegistry.DAEDRIC_SHIELD.get(), 1), 90, 16,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()),
                                     Ingredient.of(ItemRegistry.DAEDRA_HEART.get())
@@ -256,7 +256,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DWARVEN_ARROW.get(),
                     new ForgeRecipe("dwarven", new ItemStack(ItemRegistry.DWARVEN_ARROW.get(), 8), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.STEEL_INGOT.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(Items.STICK),
@@ -266,7 +266,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DWARVEN_DAGGER.get(),
                     new ForgeRecipe("dwarven", new ItemStack(ItemRegistry.DWARVEN_DAGGER.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.DWARVEN_METAL_INGOT.get()),
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
@@ -276,7 +276,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DWARVEN_BATTLEAXE.get(),
                     new ForgeRecipe("dwarven", new ItemStack(ItemRegistry.DWARVEN_BATTLEAXE.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.DWARVEN_METAL_INGOT.get(), ItemRegistry.DWARVEN_METAL_INGOT.get()),
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
@@ -286,7 +286,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DWARVEN_BOW.get(),
                     new ForgeRecipe("dwarven", new ItemStack(ItemRegistry.DWARVEN_BOW.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.DWARVEN_METAL_INGOT.get(), ItemRegistry.DWARVEN_METAL_INGOT.get()),
                                     Ingredient.of(Items.IRON_INGOT)
                             ))
@@ -294,7 +294,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DWARVEN_GREATSWORD.get(),
                     new ForgeRecipe("dwarven", new ItemStack(ItemRegistry.DWARVEN_GREATSWORD.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.DWARVEN_METAL_INGOT.get(), ItemRegistry.DWARVEN_METAL_INGOT.get()),
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT, Items.IRON_INGOT),
@@ -304,7 +304,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DWARVEN_MACE.get(),
                     new ForgeRecipe("dwarven", new ItemStack(ItemRegistry.DWARVEN_MACE.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.DWARVEN_METAL_INGOT.get(), ItemRegistry.DWARVEN_METAL_INGOT.get()),
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
@@ -314,7 +314,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DWARVEN_SWORD.get(),
                     new ForgeRecipe("dwarven", new ItemStack(ItemRegistry.DWARVEN_SWORD.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.DWARVEN_METAL_INGOT.get()),
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
@@ -324,7 +324,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DWARVEN_WAR_AXE.get(),
                     new ForgeRecipe("dwarven", new ItemStack(ItemRegistry.DWARVEN_WAR_AXE.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.DWARVEN_METAL_INGOT.get()),
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
@@ -334,7 +334,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DWARVEN_WARHAMMER.get(),
                     new ForgeRecipe("dwarven", new ItemStack(ItemRegistry.DWARVEN_WARHAMMER.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.DWARVEN_METAL_INGOT.get(), ItemRegistry.DWARVEN_METAL_INGOT.get()),
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
@@ -344,7 +344,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DWARVEN_HELMET.get(),
                     new ForgeRecipe("dwarven", new ItemStack(ItemRegistry.DWARVEN_HELMET.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.DWARVEN_METAL_INGOT.get(), ItemRegistry.DWARVEN_METAL_INGOT.get()),
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
@@ -354,7 +354,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DWARVEN_CHESTPLATE.get(),
                     new ForgeRecipe("dwarven", new ItemStack(ItemRegistry.DWARVEN_CHESTPLATE.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.DWARVEN_METAL_INGOT.get(), ItemRegistry.DWARVEN_METAL_INGOT.get(), ItemRegistry.DWARVEN_METAL_INGOT.get()),
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
@@ -364,7 +364,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DWARVEN_LEGGINGS.get(),
                     new ForgeRecipe("dwarven", new ItemStack(ItemRegistry.DWARVEN_LEGGINGS.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.DWARVEN_METAL_INGOT.get(), ItemRegistry.DWARVEN_METAL_INGOT.get(), ItemRegistry.DWARVEN_METAL_INGOT.get()),
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
@@ -374,7 +374,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DWARVEN_BOOTS.get(),
                     new ForgeRecipe("dwarven", new ItemStack(ItemRegistry.DWARVEN_BOOTS.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.DWARVEN_METAL_INGOT.get(), ItemRegistry.DWARVEN_METAL_INGOT.get()),
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
@@ -384,7 +384,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.DWARVEN_SHIELD.get(),
                     new ForgeRecipe("dwarven", new ItemStack(ItemRegistry.DWARVEN_SHIELD.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.DWARVEN_METAL_INGOT.get(), ItemRegistry.DWARVEN_METAL_INGOT.get()),
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
@@ -397,7 +397,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.EBONY_ARROW.get(),
                     new ForgeRecipe("ebony", new ItemStack(ItemRegistry.EBONY_ARROW.get(), 8), 80, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get()),
                                     Ingredient.of(Items.STICK),
                                     Ingredient.of(Items.FEATHER)
@@ -406,7 +406,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.EBONY_DAGGER.get(),
                     new ForgeRecipe("ebony", new ItemStack(ItemRegistry.EBONY_DAGGER.get(), 1), 80, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get()))
                     )
@@ -414,7 +414,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.EBONY_SWORD.get(),
                     new ForgeRecipe("ebony", new ItemStack(ItemRegistry.EBONY_SWORD.get(), 1), 80, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()))
                     )
@@ -422,7 +422,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.EBONY_GREATSWORD.get(),
                     new ForgeRecipe("ebony", new ItemStack(ItemRegistry.EBONY_GREATSWORD.get(), 1), 80, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(),
                                             ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()))
@@ -431,7 +431,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.EBONY_WAR_AXE.get(),
                     new ForgeRecipe("ebony", new ItemStack(ItemRegistry.EBONY_WAR_AXE.get(), 1), 80, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()))
                     )
@@ -439,7 +439,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.EBONY_BATTLEAXE.get(),
                     new ForgeRecipe("ebony", new ItemStack(ItemRegistry.EBONY_BATTLEAXE.get(), 1), 80, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(),
                                             ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()))
@@ -448,7 +448,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.EBONY_MACE.get(),
                     new ForgeRecipe("ebony", new ItemStack(ItemRegistry.EBONY_MACE.get(), 1), 80, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()))
                     )
@@ -456,7 +456,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.EBONY_WARHAMMER.get(),
                     new ForgeRecipe("ebony", new ItemStack(ItemRegistry.EBONY_WARHAMMER.get(), 1), 80, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(),
                                             ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()))
@@ -465,7 +465,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.EBONY_BOW.get(),
                     new ForgeRecipe("ebony", new ItemStack(ItemRegistry.EBONY_BOW.get(), 1), 80, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()))
                     )
@@ -473,7 +473,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.EBONY_HELMET.get(),
                     new ForgeRecipe("ebony", new ItemStack(ItemRegistry.EBONY_HELMET.get(), 1), 80, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()))
                     )
@@ -481,7 +481,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.EBONY_CHESTPLATE.get(),
                     new ForgeRecipe("ebony", new ItemStack(ItemRegistry.EBONY_CHESTPLATE.get(), 1), 80, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(),
                                             ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()))
@@ -490,7 +490,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.EBONY_LEGGINGS.get(),
                     new ForgeRecipe("ebony", new ItemStack(ItemRegistry.EBONY_LEGGINGS.get(), 1), 80, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(),
                                             ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()))
@@ -499,7 +499,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.EBONY_BOOTS.get(),
                     new ForgeRecipe("ebony", new ItemStack(ItemRegistry.EBONY_BOOTS.get(), 1), 80, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get()))
                     )
@@ -507,7 +507,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.EBONY_SHIELD.get(),
                     new ForgeRecipe("ebony", new ItemStack(ItemRegistry.EBONY_SHIELD.get(), 1), 80, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(), ItemRegistry.EBONY_INGOT.get(),
                                             ItemRegistry.EBONY_INGOT.get()))
@@ -519,7 +519,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ELVEN_ARROW.get(),
                     new ForgeRecipe("elven", new ItemStack(ItemRegistry.ELVEN_ARROW.get(), 8), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get()),
                                     Ingredient.of(ItemRegistry.QUICKSILVER_INGOT.get()),
                                     Ingredient.of(Items.STICK),
@@ -529,7 +529,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ELVEN_DAGGER.get(),
                     new ForgeRecipe("elven", new ItemStack(ItemRegistry.ELVEN_DAGGER.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get()),
@@ -539,7 +539,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ELVEN_SWORD.get(),
                     new ForgeRecipe("elven", new ItemStack(ItemRegistry.ELVEN_SWORD.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get()),
@@ -549,7 +549,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ELVEN_GREATSWORD.get(),
                     new ForgeRecipe("elven", new ItemStack(ItemRegistry.ELVEN_GREATSWORD.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT, Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get(), ItemRegistry.MOONSTONE_INGOT.get()),
@@ -559,7 +559,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ELVEN_WAR_AXE.get(),
                     new ForgeRecipe("elven", new ItemStack(ItemRegistry.ELVEN_WAR_AXE.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get()),
@@ -569,7 +569,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ELVEN_BATTLEAXE.get(),
                     new ForgeRecipe("elven", new ItemStack(ItemRegistry.ELVEN_BATTLEAXE.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT, Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get(), ItemRegistry.MOONSTONE_INGOT.get()),
@@ -579,7 +579,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ELVEN_MACE.get(),
                     new ForgeRecipe("elven", new ItemStack(ItemRegistry.ELVEN_MACE.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get(), ItemRegistry.MOONSTONE_INGOT.get()),
@@ -589,7 +589,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ELVEN_WARHAMMER.get(),
                     new ForgeRecipe("elven", new ItemStack(ItemRegistry.ELVEN_WARHAMMER.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT, Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get(), ItemRegistry.MOONSTONE_INGOT.get()),
@@ -599,7 +599,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ELVEN_BOW.get(),
                     new ForgeRecipe("elven", new ItemStack(ItemRegistry.ELVEN_BOW.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get(), ItemRegistry.MOONSTONE_INGOT.get()),
                                     Ingredient.of(ItemRegistry.QUICKSILVER_INGOT.get()))
                     )
@@ -607,7 +607,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ELVEN_HELMET.get(),
                     new ForgeRecipe("elven", new ItemStack(ItemRegistry.ELVEN_HELMET.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.LEATHER),
                                     Ingredient.of(Items.IRON_INGOT),
@@ -617,7 +617,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ELVEN_CHESTPLATE.get(),
                     new ForgeRecipe("elven", new ItemStack(ItemRegistry.ELVEN_CHESTPLATE.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.LEATHER),
                                     Ingredient.of(Items.IRON_INGOT),
@@ -628,7 +628,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ELVEN_LEGGINGS.get(),
                     new ForgeRecipe("elven", new ItemStack(ItemRegistry.ELVEN_LEGGINGS.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.LEATHER),
                                     Ingredient.of(Items.IRON_INGOT),
@@ -639,7 +639,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ELVEN_BOOTS.get(),
                     new ForgeRecipe("elven", new ItemStack(ItemRegistry.ELVEN_BOOTS.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.LEATHER),
                                     Ingredient.of(Items.IRON_INGOT),
@@ -649,7 +649,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ELVEN_SHIELD.get(),
                     new ForgeRecipe("elven", new ItemStack(ItemRegistry.ELVEN_SHIELD.get(), 1), 30, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get(), ItemRegistry.MOONSTONE_INGOT.get(),
@@ -662,7 +662,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.GLASS_ARROW.get(),
                     new ForgeRecipe("glass", new ItemStack(ItemRegistry.GLASS_ARROW.get(), 8), 70, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get()),
                                     Ingredient.of(ItemRegistry.MALACHITE_INGOT.get()),
                                     Ingredient.of(Items.STICK),
@@ -672,7 +672,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.GLASS_DAGGER.get(),
                     new ForgeRecipe("glass", new ItemStack(ItemRegistry.GLASS_DAGGER.get(), 1), 70, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get()),
                                     Ingredient.of(ItemRegistry.MALACHITE_INGOT.get()))
@@ -681,7 +681,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.GLASS_SWORD.get(),
                     new ForgeRecipe("glass", new ItemStack(ItemRegistry.GLASS_SWORD.get(), 1), 70, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get()),
                                     Ingredient.of(ItemRegistry.MALACHITE_INGOT.get()))
@@ -690,7 +690,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.GLASS_GREATSWORD.get(),
                     new ForgeRecipe("glass", new ItemStack(ItemRegistry.GLASS_GREATSWORD.get(), 1), 70, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get(), ItemRegistry.MOONSTONE_INGOT.get()),
                                     Ingredient.of(ItemRegistry.MALACHITE_INGOT.get(), ItemRegistry.MALACHITE_INGOT.get()))
@@ -699,7 +699,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.GLASS_WAR_AXE.get(),
                     new ForgeRecipe("glass", new ItemStack(ItemRegistry.GLASS_WAR_AXE.get(), 1), 70, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get()),
                                     Ingredient.of(ItemRegistry.MALACHITE_INGOT.get()))
@@ -708,7 +708,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.GLASS_BATTLEAXE.get(),
                     new ForgeRecipe("glass", new ItemStack(ItemRegistry.GLASS_BATTLEAXE.get(), 1), 70, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get(), ItemRegistry.MOONSTONE_INGOT.get()),
                                     Ingredient.of(ItemRegistry.MALACHITE_INGOT.get(), ItemRegistry.MALACHITE_INGOT.get()))
@@ -717,7 +717,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.GLASS_MACE.get(),
                     new ForgeRecipe("glass", new ItemStack(ItemRegistry.GLASS_MACE.get(), 1), 70, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get()),
                                     Ingredient.of(ItemRegistry.MALACHITE_INGOT.get(), ItemRegistry.MALACHITE_INGOT.get()))
@@ -726,7 +726,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.GLASS_WARHAMMER.get(),
                     new ForgeRecipe("glass", new ItemStack(ItemRegistry.GLASS_WARHAMMER.get(), 1), 70, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get(), ItemRegistry.MOONSTONE_INGOT.get()),
                                     Ingredient.of(ItemRegistry.MALACHITE_INGOT.get(), ItemRegistry.MALACHITE_INGOT.get(), ItemRegistry.MALACHITE_INGOT.get()))
@@ -735,7 +735,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.GLASS_BOW.get(),
                     new ForgeRecipe("glass", new ItemStack(ItemRegistry.GLASS_BOW.get(), 1), 70, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get()),
                                     Ingredient.of(ItemRegistry.MALACHITE_INGOT.get(), ItemRegistry.MALACHITE_INGOT.get()))
                     )
@@ -743,7 +743,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.GLASS_HELMET.get(),
                     new ForgeRecipe("glass", new ItemStack(ItemRegistry.GLASS_HELMET.get(), 1), 70, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.LEATHER),
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get()),
@@ -753,7 +753,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.GLASS_CHESTPLATE.get(),
                     new ForgeRecipe("glass", new ItemStack(ItemRegistry.GLASS_CHESTPLATE.get(), 1), 70, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.LEATHER),
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get(), ItemRegistry.MOONSTONE_INGOT.get()),
@@ -764,7 +764,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.GLASS_LEGGINGS.get(),
                     new ForgeRecipe("glass", new ItemStack(ItemRegistry.GLASS_LEGGINGS.get(), 1), 70, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.LEATHER),
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get(), ItemRegistry.MOONSTONE_INGOT.get()),
@@ -775,7 +775,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.GLASS_BOOTS.get(),
                     new ForgeRecipe("glass", new ItemStack(ItemRegistry.GLASS_BOOTS.get(), 1), 70, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.LEATHER),
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get()),
@@ -785,7 +785,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.GLASS_SHIELD.get(),
                     new ForgeRecipe("glass", new ItemStack(ItemRegistry.GLASS_SHIELD.get(), 1), 70, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(ItemRegistry.MOONSTONE_INGOT.get()),
                                     Ingredient.of(ItemRegistry.MALACHITE_INGOT.get(), ItemRegistry.MALACHITE_INGOT.get(),
@@ -798,7 +798,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.IRON_ARROW.get(),
                     new ForgeRecipe("iron", new ItemStack(ItemRegistry.IRON_ARROW.get(), 8), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(Items.STICK),
                                     Ingredient.of(Items.FEATHER)
@@ -807,7 +807,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.IRON_DAGGER.get(),
                     new ForgeRecipe("iron", new ItemStack(ItemRegistry.IRON_DAGGER.get(), 1), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT))
                     )
@@ -815,7 +815,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.IRON_SWORD.get(),
                     new ForgeRecipe("iron", new ItemStack(ItemRegistry.IRON_SWORD.get(), 1), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT, Items.IRON_INGOT))
                     )
@@ -823,7 +823,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.IRON_GREATSWORD.get(),
                     new ForgeRecipe("iron", new ItemStack(ItemRegistry.IRON_GREATSWORD.get(), 1), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT, Items.IRON_INGOT, Items.IRON_INGOT, Items.IRON_INGOT))
                     )
@@ -831,7 +831,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.IRON_WAR_AXE.get(),
                     new ForgeRecipe("iron", new ItemStack(ItemRegistry.IRON_WAR_AXE.get(), 1), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT, Items.IRON_INGOT))
                     )
@@ -839,7 +839,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.IRON_BATTLEAXE.get(),
                     new ForgeRecipe("iron", new ItemStack(ItemRegistry.IRON_BATTLEAXE.get(), 1), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT, Items.IRON_INGOT, Items.IRON_INGOT, Items.IRON_INGOT))
                     )
@@ -847,7 +847,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.IRON_MACE.get(),
                     new ForgeRecipe("iron", new ItemStack(ItemRegistry.IRON_MACE.get(), 1), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT, Items.IRON_INGOT, Items.IRON_INGOT))
                     )
@@ -855,7 +855,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.IRON_WARHAMMER.get(),
                     new ForgeRecipe("iron", new ItemStack(ItemRegistry.IRON_WARHAMMER.get(), 1), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT, Items.IRON_INGOT, Items.IRON_INGOT, Items.IRON_INGOT))
                     )
@@ -863,7 +863,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.IRON_HELMET.get(),
                     new ForgeRecipe("iron", new ItemStack(ItemRegistry.IRON_HELMET.get(), 1), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT, Items.IRON_INGOT, Items.IRON_INGOT))
                     )
@@ -871,7 +871,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.IRON_CHESTPLATE.get(),
                     new ForgeRecipe("iron", new ItemStack(ItemRegistry.IRON_CHESTPLATE.get(), 1), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT, Items.IRON_INGOT, Items.IRON_INGOT, Items.IRON_INGOT, Items.IRON_INGOT))
                     )
@@ -879,7 +879,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.IRON_LEGGINGS.get(),
                     new ForgeRecipe("iron", new ItemStack(ItemRegistry.IRON_LEGGINGS.get(), 1), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT, Items.IRON_INGOT, Items.IRON_INGOT, Items.IRON_INGOT, Items.IRON_INGOT))
                     )
@@ -887,7 +887,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.IRON_BOOTS.get(),
                     new ForgeRecipe("iron", new ItemStack(ItemRegistry.IRON_BOOTS.get(), 1), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT, Items.IRON_INGOT, Items.IRON_INGOT))
                     )
@@ -895,7 +895,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.IRON_SHIELD.get(),
                     new ForgeRecipe("iron", new ItemStack(ItemRegistry.IRON_SHIELD.get(), 1), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT, Items.IRON_INGOT, Items.IRON_INGOT, Items.IRON_INGOT))
                     )
@@ -906,7 +906,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ORCISH_ARROW.get(),
                     new ForgeRecipe("orcish", new ItemStack(ItemRegistry.ORCISH_ARROW.get(), 8), 50, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.ORICHALCUM_INGOT.get()),
                                     Ingredient.of(Items.STICK),
                                     Ingredient.of(Items.FEATHER)
@@ -915,7 +915,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ORCISH_DAGGER.get(),
                     new ForgeRecipe("orcish", new ItemStack(ItemRegistry.ORCISH_DAGGER.get(), 1), 50, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.ORICHALCUM_INGOT.get()))
@@ -924,7 +924,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ORCISH_SWORD.get(),
                     new ForgeRecipe("orcish", new ItemStack(ItemRegistry.ORCISH_SWORD.get(), 1), 50, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.ORICHALCUM_INGOT.get(), ItemRegistry.ORICHALCUM_INGOT.get()))
@@ -933,7 +933,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ORCISH_GREATSWORD.get(),
                     new ForgeRecipe("orcish", new ItemStack(ItemRegistry.ORCISH_GREATSWORD.get(), 1), 50, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT, Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.ORICHALCUM_INGOT.get(), ItemRegistry.ORICHALCUM_INGOT.get(),
@@ -943,7 +943,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ORCISH_WAR_AXE.get(),
                     new ForgeRecipe("orcish", new ItemStack(ItemRegistry.ORCISH_WAR_AXE.get(), 1), 50, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.ORICHALCUM_INGOT.get(), ItemRegistry.ORICHALCUM_INGOT.get()))
@@ -952,7 +952,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ORCISH_BATTLEAXE.get(),
                     new ForgeRecipe("orcish", new ItemStack(ItemRegistry.ORCISH_BATTLEAXE.get(), 1), 50, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.ORICHALCUM_INGOT.get(), ItemRegistry.ORICHALCUM_INGOT.get(),
@@ -962,7 +962,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ORCISH_MACE.get(),
                     new ForgeRecipe("orcish", new ItemStack(ItemRegistry.ORCISH_MACE.get(), 1), 50, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.ORICHALCUM_INGOT.get(), ItemRegistry.ORICHALCUM_INGOT.get(),
@@ -972,7 +972,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ORCISH_WARHAMMER.get(),
                     new ForgeRecipe("orcish", new ItemStack(ItemRegistry.ORCISH_WARHAMMER.get(), 1), 50, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.ORICHALCUM_INGOT.get(), ItemRegistry.ORICHALCUM_INGOT.get(),
@@ -982,7 +982,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ORCISH_BOW.get(),
                     new ForgeRecipe("orcish", new ItemStack(ItemRegistry.ORCISH_BOW.get(), 1), 50, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.ORICHALCUM_INGOT.get(), ItemRegistry.ORICHALCUM_INGOT.get()))
                     )
@@ -990,7 +990,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ORCISH_HELMET.get(),
                     new ForgeRecipe("orcish", new ItemStack(ItemRegistry.ORCISH_HELMET.get(), 1), 50, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.ORICHALCUM_INGOT.get(), ItemRegistry.ORICHALCUM_INGOT.get()))
@@ -999,7 +999,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ORCISH_CHESTPLATE.get(),
                     new ForgeRecipe("orcish", new ItemStack(ItemRegistry.ORCISH_CHESTPLATE.get(), 1), 50, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.ORICHALCUM_INGOT.get(), ItemRegistry.ORICHALCUM_INGOT.get(),
@@ -1009,7 +1009,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ORCISH_LEGGINGS.get(),
                     new ForgeRecipe("orcish", new ItemStack(ItemRegistry.ORCISH_LEGGINGS.get(), 1), 50, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.ORICHALCUM_INGOT.get(), ItemRegistry.ORICHALCUM_INGOT.get(),
@@ -1019,7 +1019,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ORCISH_BOOTS.get(),
                     new ForgeRecipe("orcish", new ItemStack(ItemRegistry.ORCISH_BOOTS.get(), 1), 50, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.ORICHALCUM_INGOT.get(), ItemRegistry.ORICHALCUM_INGOT.get(),
@@ -1029,7 +1029,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.ORCISH_SHIELD.get(),
                     new ForgeRecipe("orcish", new ItemStack(ItemRegistry.ORCISH_SHIELD.get(), 1), 50, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.ORICHALCUM_INGOT.get(), ItemRegistry.ORICHALCUM_INGOT.get(),
@@ -1042,7 +1042,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.STEEL_ARROW.get(),
                     new ForgeRecipe("steel", new ItemStack(ItemRegistry.STEEL_ARROW.get(), 8), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.STEEL_INGOT.get()),
                                     Ingredient.of(Items.STICK),
                                     Ingredient.of(Items.FEATHER)
@@ -1051,7 +1051,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.STEEL_DAGGER.get(),
                     new ForgeRecipe("steel", new ItemStack(ItemRegistry.STEEL_DAGGER.get(), 1), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.STEEL_INGOT.get()))
@@ -1060,7 +1060,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.STEEL_SWORD.get(),
                     new ForgeRecipe("steel", new ItemStack(ItemRegistry.STEEL_SWORD.get(), 1), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.STEEL_INGOT.get(), ItemRegistry.STEEL_INGOT.get()))
@@ -1069,7 +1069,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.STEEL_GREATSWORD.get(),
                     new ForgeRecipe("steel", new ItemStack(ItemRegistry.STEEL_GREATSWORD.get(), 1), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT, Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.STEEL_INGOT.get(), ItemRegistry.STEEL_INGOT.get(),
@@ -1079,7 +1079,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.STEEL_WAR_AXE.get(),
                     new ForgeRecipe("steel", new ItemStack(ItemRegistry.STEEL_WAR_AXE.get(), 1), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.STEEL_INGOT.get(), ItemRegistry.STEEL_INGOT.get()))
@@ -1088,7 +1088,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.STEEL_BATTLEAXE.get(),
                     new ForgeRecipe("steel", new ItemStack(ItemRegistry.STEEL_BATTLEAXE.get(), 1), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.STEEL_INGOT.get(), ItemRegistry.STEEL_INGOT.get(),
@@ -1098,7 +1098,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.STEEL_MACE.get(),
                     new ForgeRecipe("steel", new ItemStack(ItemRegistry.STEEL_MACE.get(), 1), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.STEEL_INGOT.get(), ItemRegistry.STEEL_INGOT.get(),
@@ -1108,7 +1108,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.STEEL_WARHAMMER.get(),
                     new ForgeRecipe("steel", new ItemStack(ItemRegistry.STEEL_WARHAMMER.get(), 1), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get(), ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.STEEL_INGOT.get(), ItemRegistry.STEEL_INGOT.get(),
@@ -1118,7 +1118,7 @@ public abstract class ForgeRecipeProvider {
             addForgeRecipe(
                     ItemRegistry.STEEL_SHIELD.get(),
                     new ForgeRecipe("steel", new ItemStack(ItemRegistry.STEEL_SHIELD.get(), 1), 1, 5,
-                            NonNullList.of(
+                            ingredientList(
                                     Ingredient.of(ItemRegistry.LEATHER_STRIPS.get()),
                                     Ingredient.of(Items.IRON_INGOT),
                                     Ingredient.of(ItemRegistry.STEEL_INGOT.get(), ItemRegistry.STEEL_INGOT.get(),
@@ -1126,5 +1126,13 @@ public abstract class ForgeRecipeProvider {
                     )
             );
         }
+    }
+
+    private static NonNullList<Ingredient> ingredientList(Ingredient... ingredients) {
+        NonNullList<Ingredient> list = NonNullList.create();
+        for (Ingredient ingredient : ingredients) {
+            list.add(ingredient);
+        }
+        return list;
     }
 }

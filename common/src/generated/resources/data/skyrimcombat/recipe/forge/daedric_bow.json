@@ -2,6 +2,7 @@
   "type": "skyrimcombat:forge",
   "category": "daedric",
   "ingredients": [
+    "skyrimcombat:leather_strips",
     [
       "skyrimcombat:ebony_ingot",
       "skyrimcombat:ebony_ingot",

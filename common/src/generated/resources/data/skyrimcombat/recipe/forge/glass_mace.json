@@ -2,6 +2,7 @@
   "type": "skyrimcombat:forge",
   "category": "glass",
   "ingredients": [
+    "skyrimcombat:leather_strips",
     "skyrimcombat:moonstone_ingot",
     [
       "skyrimcombat:malachite_ingot",
