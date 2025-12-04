@@ -3,21 +3,20 @@ package com.ryankshah.skyrimcombat.data;
 import com.ryankshah.skyrimcombat.Constants;
 import com.ryankshah.skyrimcombat.block.ArcaneEnchanterBlock;
 import com.ryankshah.skyrimcombat.block.BlacksmithForgeBlock;
+import com.ryankshah.skyrimcombat.registration.RegistryObject;
 import com.ryankshah.skyrimcombat.registry.BlockRegistry;
 import com.ryankshah.skyrimcombat.registry.ItemRegistry;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
-import net.minecraft.client.data.models.model.ItemModelUtils;
-import net.minecraft.client.data.models.model.ModelTemplate;
-import net.minecraft.client.data.models.model.ModelTemplates;
-import net.minecraft.client.data.models.model.TextureSlot;
+import net.minecraft.client.data.models.model.*;
 import net.minecraft.client.renderer.item.ItemModel;
 import net.minecraft.client.renderer.item.properties.numeric.UseDuration;
 import net.minecraft.core.Holder;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ShieldItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
 
@@ -235,14 +234,14 @@ public class SkyrimCombatModelProvider extends ModelProvider
         itemModels.generateFlatItem(ItemRegistry.FALMER_ARROW.get(), ModelTemplates.FLAT_ITEM);
 
         // Shields
-        itemModels.generateShield(ItemRegistry.DAEDRIC_SHIELD.get());
-        itemModels.generateShield(ItemRegistry.DWARVEN_SHIELD.get());
-        itemModels.generateShield(ItemRegistry.EBONY_SHIELD.get());
-        itemModels.generateShield(ItemRegistry.ELVEN_SHIELD.get());
-        itemModels.generateShield(ItemRegistry.GLASS_SHIELD.get());
-        itemModels.generateShield(ItemRegistry.IRON_SHIELD.get());
-        itemModels.generateShield(ItemRegistry.ORCISH_SHIELD.get());
-        itemModels.generateShield(ItemRegistry.STEEL_SHIELD.get());
+        generateSimpleShield(itemModels, ItemRegistry.DAEDRIC_SHIELD.get());
+        generateSimpleShield(itemModels, ItemRegistry.DWARVEN_SHIELD.get());
+        generateSimpleShield(itemModels, ItemRegistry.EBONY_SHIELD.get());
+        generateSimpleShield(itemModels, ItemRegistry.ELVEN_SHIELD.get());
+        generateSimpleShield(itemModels, ItemRegistry.GLASS_SHIELD.get());
+        generateSimpleShield(itemModels, ItemRegistry.IRON_SHIELD.get());
+        generateSimpleShield(itemModels, ItemRegistry.ORCISH_SHIELD.get());
+        generateSimpleShield(itemModels, ItemRegistry.STEEL_SHIELD.get());
 
         blockModels.createTrivialCube(BlockRegistry.CORUNDUM_ORE.get());
         blockModels.createTrivialCube(BlockRegistry.DEEPSLATE_CORUNDUM_ORE.get());
@@ -268,11 +267,16 @@ public class SkyrimCombatModelProvider extends ModelProvider
 
     @Override
     protected Stream<? extends Holder<Block>> getKnownBlocks() {
-        return super.getKnownBlocks().filter(blockHolder -> !(
+        return BlockRegistry.BLOCKS.getEntries().stream().map(RegistryObject::asHolder).filter(blockHolder -> !(
                 blockHolder.value() instanceof CropBlock ||
                         blockHolder.value() instanceof BlacksmithForgeBlock ||
                         blockHolder.value() instanceof ArcaneEnchanterBlock
         ));
+    }
+
+    @Override
+    protected Stream<? extends Holder<Item>> getKnownItems() {
+        return ItemRegistry.ITEMS.getEntries().stream().map(RegistryObject::asHolder).filter(e -> !(e.value() instanceof ShieldItem));
     }
 
     private void sword(ItemModelGenerators generator, Item item) {
@@ -315,6 +319,28 @@ public class SkyrimCombatModelProvider extends ModelProvider
         );
     }
 
+//    private void greatsword(ItemModelGenerators generator, Item item) {
+//        String itemName = item.getDescriptionId().replace("item.skyrimcombat.", "");
+//
+//        // Create the base model
+//        ResourceLocation baseModel = generator.createFlatItemModel(
+//                item,
+//                GREATSWORD
+//        );
+//
+//        // Create the blocking model
+//        ResourceLocation blockingModel = generator.createFlatItemModel(
+//                item,
+//                "_blocking",
+//                GREATSWORD_BLOCKING
+//        );
+//
+//        // Set up the conditional switching
+//        ItemModel.Unbaked itemmodel$unbaked = ItemModelUtils.plainModel(baseModel);
+//        ItemModel.Unbaked itemmodel$unbaked1 = ItemModelUtils.plainModel(blockingModel);
+//        generator.generateBooleanDispatch(item, ItemModelUtils.isUsingItem(), itemmodel$unbaked1, itemmodel$unbaked);
+//    }
+
     private void greatsword(ItemModelGenerators generator, Item item) {
         String itemName = item.getDescriptionId().replace("item.skyrimcombat.", "");
 
@@ -324,16 +350,31 @@ public class SkyrimCombatModelProvider extends ModelProvider
                 GREATSWORD
         );
 
-        // Create the blocking model
-        ResourceLocation blockingModel = generator.createFlatItemModel(
-                item,
-                "_blocking",
-                GREATSWORD_BLOCKING
+        // Create texture mapping that points to the base texture (without _blocking suffix)
+        TextureMapping textureMapping = new TextureMapping()
+                .put(TextureSlot.LAYER0, ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "item/" + itemName));
+
+        // Create the blocking model with the base texture
+        ResourceLocation blockingModel = GREATSWORD_BLOCKING.create(
+                ResourceLocation.fromNamespaceAndPath(Constants.MOD_ID, "item/" + itemName + "_blocking"),
+                textureMapping,
+                generator.modelOutput
         );
 
         // Set up the conditional switching
         ItemModel.Unbaked itemmodel$unbaked = ItemModelUtils.plainModel(baseModel);
         ItemModel.Unbaked itemmodel$unbaked1 = ItemModelUtils.plainModel(blockingModel);
         generator.generateBooleanDispatch(item, ItemModelUtils.isUsingItem(), itemmodel$unbaked1, itemmodel$unbaked);
+    }
+
+    private void generateSimpleShield(ItemModelGenerators generator, Item shieldItem) {
+        // Reference your existing custom models
+        ResourceLocation baseModel = ModelLocationUtils.getModelLocation(shieldItem);
+        ResourceLocation blockingModel = ModelLocationUtils.getModelLocation(shieldItem, "_blocking");
+
+        // Set up the conditional switching between your existing models
+        ItemModel.Unbaked itemmodel$unbaked = ItemModelUtils.plainModel(baseModel);
+        ItemModel.Unbaked itemmodel$unbaked1 = ItemModelUtils.plainModel(blockingModel);
+        generator.generateBooleanDispatch(shieldItem, ItemModelUtils.isUsingItem(), itemmodel$unbaked1, itemmodel$unbaked);
     }
 }

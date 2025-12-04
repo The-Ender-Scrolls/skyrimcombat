@@ -327,13 +327,5 @@
     "fixed": {
       "translation": [0, 0, 2.75]
     }
-  },
-  "overrides": [
-    {
-      "predicate": {
-        "skyrimcombat:blocking": 1.0
-      },
-      "model": "skyrimcombat:item/orcish_shield_blocking"
-    }
-  ]
+  }
 }

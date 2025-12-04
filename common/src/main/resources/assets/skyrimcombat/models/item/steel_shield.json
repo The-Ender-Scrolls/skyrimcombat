@@ -2,7 +2,8 @@
 	"credit": "Made with Blockbench",
 	"gui_light": "front",
 	"textures": {
-		"0": "skyrimcombat:item/steel_shield"
+		"0": "skyrimcombat:item/steel_shield",
+		"particle": "skyrimcombat:item/steel_shield"
 	},
 	"elements": [
 		{
@@ -157,13 +158,5 @@
 		"fixed": {
 			"translation": [0, 0, 2.75]
 		}
-	},
-	"overrides": [
-		{
-			"predicate": {
-				"skyrimcombat:blocking": 1.0
-			},
-			"model": "skyrimcombat:item/steel_shield_blocking"
-		}
-	]
+	}
 }

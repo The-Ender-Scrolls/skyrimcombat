@@ -1,6 +1,6 @@
 {
+	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
-	"gui_light": "front",
 	"textures": {
 		"0": "skyrimcombat:item/daedric_shield"
 	},
@@ -266,6 +266,7 @@
 			}
 		}
 	],
+	"gui_light": "front",
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [90, 0, 0],
@@ -287,13 +288,5 @@
 		"fixed": {
 			"translation": [0, 0, 2.75]
 		}
-	},
-	"overrides": [
-		{
-			"predicate": {
-				"skyrimcombat:blocking": 1.0
-			},
-			"model": "skyrimcombat:item/daedric_shield_blocking"
-		}
-	]
+	}
 }

@@ -2,18 +2,12 @@
   "model": {
     "type": "minecraft:condition",
     "on_false": {
-      "type": "minecraft:special",
-      "base": "skyrimcombat:item/iron_shield",
-      "model": {
-        "type": "minecraft:shield"
-      }
+      "type": "minecraft:model",
+      "model": "skyrimcombat:item/iron_shield"
     },
     "on_true": {
-      "type": "minecraft:special",
-      "base": "skyrimcombat:item/iron_shield_blocking",
-      "model": {
-        "type": "minecraft:shield"
-      }
+      "type": "minecraft:model",
+      "model": "skyrimcombat:item/iron_shield_blocking"
     },
     "property": "minecraft:using_item"
   }
